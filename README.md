@@ -1,4 +1,4 @@
-<img src="logo.png" alt="Scads" height="100px">
+<img src="logo.webp" alt="Scads" height="100px">
 
 # Scads Toolkit
 
