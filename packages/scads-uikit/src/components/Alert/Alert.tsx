@@ -70,12 +70,13 @@ const CloseHandler = styled.div`
 
 const StyledAlert = styled(Flex)`
   position: relative;
-  border-radius: 16px;
-  --tw-backdrop-blur: blur(30px);
-    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  --tw-bg-opacity: 0.3;
-  background: ${({ theme }) => theme.isDark ? "rgb(88 88 94 / var(--tw-bg-opacity))" : "rgba(255,255,255,0.6)"};
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* For older versions of Chrome and Safari */
+  background-color: ${({ theme }) => theme.isDark ? "rgba(88, 88, 94, 0.1)" : "rgba(255, 255, 255, 0.1)"};
+  background-image: ${({ theme }) => theme.isDark ? "" : "linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2))"};
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  transition: all 300ms;
 `;
 
 const StyledHeading= styled(Heading)`
