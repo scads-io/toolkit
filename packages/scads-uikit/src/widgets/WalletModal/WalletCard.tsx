@@ -29,7 +29,6 @@ const StyledP = styled.p`
   line-height: 1.5rem;
   text-align: center;
   color: ${({ theme }) => theme.isDark ? "white" : "black"};
-  font-family: 'Poppins';
 `
 
 interface MoreWalletCardProps extends ButtonProps {

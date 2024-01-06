@@ -81,12 +81,10 @@ const StyledAlert = styled(Flex)`
 
 const StyledHeading= styled(Heading)`
   color: ${({ theme }) => theme.isDark ? "white" : "black"};
-  font-family: 'Poppins';
 `
 
 const StyledText= styled(Text)`
   color: ${({ theme }) => theme.isDark ? "white" : "black"};
-  font-family: 'Poppins';
 `
 
 const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {

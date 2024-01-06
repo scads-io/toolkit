@@ -20,7 +20,6 @@ interface Props {
 }
 
 const StyledDiv = styled.div`
-  font-family: 'Poppins';
   color: ${({ theme }) => theme.isDark ? "white" : "black"};
 `
 
