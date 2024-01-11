@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import styled, { useTheme } from "styled-components";
-import getExternalLinkProps from "../../util/getExternalLinkProps";
 import Grid from "../../components/Box/Grid";
 import Box from "../../components/Box/Box";
 import getThemeValue from "../../util/getThemeValue";
-import Text from "../../components/Text/Text";
-import Heading from "../../components/Heading/Heading";
-import { Button } from "../../components/Button";
 import { ModalBody, ModalCloseButton, ConnectModalContainer, ModalHeader, ModalTitle } from "../Modal";
 import WalletCard, { MoreWalletCard } from "./WalletCard";
 import config, { walletLocalStorageKey } from "./config";
@@ -67,12 +63,12 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
       <ModalHeader background={getThemeValue("colors.backgroundAlt")(theme)}>
         <ModalTitle>
           <StyledDiv>
-            <StyledH1>Connect Wallet</StyledH1>
+            <StyledH1>{t('Connect Wallet')}</StyledH1>
           </StyledDiv>
         </ModalTitle>
         <ModalCloseButton onDismiss={onDismiss} />
       </ModalHeader>
-      <ModalBody width={["320px", null, "340px"]}>
+      <ModalBody>
         <Box py="24px" maxHeight="453px" overflowY="auto">
           <Grid gridTemplateColumns="1fr 1fr">
             {displayListConfig.map((wallet) => (
