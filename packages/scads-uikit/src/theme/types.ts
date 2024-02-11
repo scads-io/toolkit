@@ -1,5 +1,3 @@
-export type Breakpoints = string[];
-
 export type MediaQueries = {
   xs: string;
   sm: string;

@@ -1,14 +1,10 @@
-import { CardTheme } from "../components/Card/types";
 import { ToggleTheme } from "../components/Toggle/theme";
-import { Breakpoints, Colors, MediaQueries, Radii, Shadows, Spacing, ZIndices } from "./types";
+import { Colors, MediaQueries, Radii, Shadows, Spacing, ZIndices } from "./types";
 
 export interface ScadsTheme {
-  siteWidth: number;
   isDark: boolean;
   colors: Colors;
-  card: CardTheme;
   toggle: ToggleTheme;
-  breakpoints: Breakpoints;
   mediaQueries: MediaQueries;
   spacing: Spacing;
   shadows: Shadows;

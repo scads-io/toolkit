@@ -1,4 +1,4 @@
-import { MediaQueries, Breakpoints, Spacing } from "./types";
+import { MediaQueries, Spacing } from "./types";
 
 export const breakpointMap: { [key: string]: number } = {
   xs: 370,
@@ -8,8 +8,6 @@ export const breakpointMap: { [key: string]: number } = {
   xl: 1080,
   xxl: 1200,
 };
-
-const breakpoints: Breakpoints = Object.values(breakpointMap).map((breakpoint) => `${breakpoint}px`);
 
 const mediaQueries: MediaQueries = {
   xs: `@media screen and (min-width: ${breakpointMap.xs}px)`,
@@ -46,8 +44,6 @@ const zIndices = {
 };
 
 export default {
-  siteWidth: 1200,
-  breakpoints,
   mediaQueries,
   spacing,
   shadows,
