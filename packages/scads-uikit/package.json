@@ -1,5 +1,5 @@
 {
-  "name": "@scads/uikit",
+  "name": "@scads-io/uikit",
   "version": "0.4.0",
   "description": "Set of UI components for scads projects",
   "main": "dist/index.cjs.js",
@@ -8,10 +8,10 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/scads/scads-toolkit/tree/master/packages/scads-uikit",
+  "repository": "https://github.com/scads-io/toolkit/tree/main/packages/scads-uikit",
   "license": "MIT",
   "scripts": {
-    "start": "yarn storybook",
+    "start": "npm storybook",
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
@@ -19,7 +19,7 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "test": "jest",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "npm run build"
   },
   "jest": {
     "setupFilesAfterEnv": [
